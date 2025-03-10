@@ -58,7 +58,7 @@ def get_update_info(module):
       if is_multiline(line):
         if idx < len(line) - 1:
           next_line = splitted[idx + 1]
-          line = f"{line} {next_line}"
+          line = line + " " + next_line
           skip_next = True
      
       # specials like obsoleting packages and security info 
